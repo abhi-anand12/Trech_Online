@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trech - DSA Quiz</title>
+    <meta name="description" content="Data Structure and Algorithms Quiz">
+    <meta name="keywords" content="Trech,dsa,programming,online quiz,trech,data structure, algorithms">
+    <link rel="icon" type="image/png" href="/images/favicon_final.png">
+    <link rel="stylesheet" href="emhstyle.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a  class="noHover" href="/index.html"><img src="/images/trech_logo.png" style="width:100px; height:90px;"></a></label>
+        <ul>
+            <li><a  href="/index.html">Home</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="/index.html">Quizzes</a></li>
+            <button class="#">Support us</button>
+        </ul>
+    </nav>
+    <div class="emhButton">
+        <div class="childButton"><button id="easy" class="emhchildButton">Easy</button></div>
+        <div class="childButton"><button id="medium"  class="emhchildButton">Medium</button></div>
+        <div class="childButton"><button id="hard"  class="emhchildButton">Hard</button></div>
+    </div>
+
+    <footer>
+      <div class="content" id="footer">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic" style="color:#FAB702;">About us</div>
+              <p>Trech is an online quiz platform where you can test your knowledge with multiple levels of quizzes. </p>
+          </div>
+          <div class="lower">
+            <div class="topic" style="color:#FAB702;">Contact us</div>
+            
+            <div class="email">
+              <a href="#footer" onclick="sendMail()"><i class="fas fa-envelope"></i>office@trech.online</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic" style="color:#FAB702;">Quick Links</div>
+          <div><a href="/index.html">Home</a></div>
+          <div><a href="/aboutus.html">About us</a></div>
+          <div><a href="#">Blogs</a></div>
+          <div><a href="/index.html">Quizzes</a></div>
+          <div><a href="/privacy.html">Privacy Policy</a></div>
+          
+        </div>
+        <div class="right box" id="mailSend">
+          <div class="topic" style="color:#FAB702;">Follow us</div>
+          <form action="#">
+            
+            <input type="submit" name="" value="Send Mail to Us" onclick="sendMail()">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2022 <a href="#" style="color:#FAB702;">Trech</a> All rights reserved</p>
+      </div>
+    </footer>
+
+      <script>
+        
+    function sendMail() {
+      var link = "mailto:office@trech.online";
+      window.location.href = link;
+    }
+        document.getElementById("easy").onclick = function () {
+          location.href = "easy/index.html";
+        }
+        document.getElementById("medium").onclick = function () {
+          location.href = "medium/index.html";
+        }
+        document.getElementById("hard").onclick = function () {
+          location.href = "hard/index.html";
+        }
+      </script>
+
+</body>
+
+</html>

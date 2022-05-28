@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Trech - Programming Quiz Website</title>
+  <meta name="description" content="Trech is an online quiz platform where you can test your knowledge with multiple levels of quizzes">
+  <meta name="keywords" content="Trech,quiz,java,c,c++,sql,python,dsa,online quiz,programming quiz,trech">
+  <link rel="icon" type="image/png" href="images/favicon_final.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <linK rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+</head>
+
+<body>
+  
+  
+  
+  <!-- HEADER FILE  -->
+
+    <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><a  class="noHover" href="/index.html"><img src="images/trech_logo.png" style="width:100px; height:90px;"></a></label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><a href="#quiz-topics">Quizzes</a></li>
+      <button class="support-us">Support us</button>
+    </ul>
+  </nav>  
+
+  
+  
+  <!-- BANNER SECTION  -->
+  <section id="welcome-section" class="welcome-section banner_image text-animation">
+    <h1><b><span style="color: #f5cf26;">Let's Come Together to Help Each Other</span></b></h1>
+
+  </section>
+
+  <!-- QUIZ-CONTENT -->
+  <div>
+    <h2 id="quiz-topics">QUIZ TOPICS</h2>
+  </div>
+  <section class="card-container">
+
+    <div class="card" id="java_button">
+      <i class="fab fa-java" i></i>
+      <h1>Java</h1>
+      <p>Click Here</p>
+    </div>
+ 
+    <div class="card" id="cpp_button">
+      <img src="images/cpp_logo.png">
+      <h1>C++</h1>
+      <p>Click Here</p>
+    </div>
+    
+
+    <div class="card" id="sql_button">
+      <img src="images/sql_logo.png">
+      <h1>Sql</h1>
+      <p>Click Here</p>
+    </div>
+
+    <div class="card" id="python_button">
+      <i class="fab fa-python"></i>
+      <h1>Python</h1>
+      <p>Click Here</p>
+    </div>
+
+
+
+    <div class="card" id="dsa_button">
+      <img src="images/dsa_logo.png" >
+      <h1>DSA</h1>
+      <p>Click Here.</p>
+    </div>
+
+    <div class="card" id="c_button">
+      <img src="images/c_logo.png" >
+      <h1>C Language</h1>
+      <p>Click Here.</p>
+    </div>
+
+  </section>
+
+ 
+
+  <!-- FOOTER FILE  -->
+  <footer>
+    <div class="content" id="footer">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic" style="color:#FAB702;">About us</div>
+            <p>Trech is an online quiz platform where you can test your knowledge with multiple levels of quizzes. </p>
+        </div>
+        <div class="lower">
+          <div class="topic" style="color:#FAB702;">Contact us</div>
+          
+          <div class="email">
+            <a href="#footer" onclick="sendMail()"><i class="fas fa-envelope"></i>office@trech.online</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic" style="color:#FAB702;">Quick Links</div>
+        <div><a href="#">Home</a></div>
+        <div><a href="aboutus.html">About us</a></div>
+        <div><a href="#">Blogs</a></div>
+        <div><a href="#quiz-topics">Quizzes</a></div>
+        <div><a href="privacy.html">Privacy Policy</a></div>
+        
+      </div>
+      <div class="right box" id="mailSend">
+        <div class="topic" style="color:#FAB702;">Follow us</div>
+        <form action="#">
+          <!-- <input type="text" placeholder="Enter email address"> -->
+          <input type="submit" name="" value="Send Mail to Us" onclick="sendMail()">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2022 <a href="#" style="color:#FAB702;">Trech</a> All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- TOP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-angle-double-up"></i>
+  </button>
+
+
+  <script>
+    function sendMail() {
+      var link = "mailto:office@trech.online";
+      window.location.href = link;
+    }
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+document.getElementById("java_button"). onclick = function () {
+location.href ="java/emh.html";
+}
+
+document.getElementById("cpp_button"). onclick = function () {
+location.href ="cpp/emh.html";
+}
+
+document.getElementById("sql_button"). onclick = function () {
+location.href ="sql/emh.html";
+}
+
+document.getElementById("python_button"). onclick = function () {
+location.href ="python/emh.html";
+}
+
+document.getElementById("dsa_button"). onclick = function () {
+location.href ="dsa/emh.html";
+}
+
+document.getElementById("c_button"). onclick = function () {
+location.href ="c/emh.html";
+}
+  </script>
+
+</body>
+
+</html>
